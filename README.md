@@ -1,2 +1,3 @@
 # adhoc_notebooks
-ad hoc notebook walkthroughs, learning etc
+
+Somewhere to store short notebooks and md for reference, learning and sharing
