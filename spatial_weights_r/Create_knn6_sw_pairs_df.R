@@ -12,7 +12,7 @@ library(readr)
 library(ggplot2)
 
 # Path to hexagons file
-gpk_path <- "C:/Users/agari/OneDrive/Documents/R scripts/spatial_weights_EF/uber_hex_res09.gpkg"
+gpk_path <- "uber_hex_res09.gpkg"
 
 # Layers in gpkg
 layers <- st_layers(gpk_path)
