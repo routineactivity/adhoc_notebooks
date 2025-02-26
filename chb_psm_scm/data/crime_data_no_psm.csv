@@ -1,4 +1,4 @@
-id,month,burglary,damage,drugs,pow,robbery,sac,viol,vehicle_crime,ttl_sac_viol_cd,intervention ,treatment
+id,month,burglary,damage,drugs,pow,robbery,sac,viol,vehicle_crime,ttl_sac_viol_cd,intervention,treatment
 E01006412,2020-01-01,1,0,0,0,0,1,2,0,3,0,0
 E01006413,2020-01-01,0,0,2,1,0,1,8,1,9,0,0
 E01006414,2020-01-01,0,2,2,0,0,1,4,1,7,0,0
