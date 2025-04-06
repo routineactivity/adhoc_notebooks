@@ -125,6 +125,15 @@ def aoristic(input_csv=None, input_df=None,
 
     print(f"Aoristic analysis completed. Files saved in '{output_directory}'.")
 
+    # save heatmap totals and percentages
+    df_heatmap_totals = pd.DataFrame(heatmap_totals, columns=[f'{h:02d}:00' for h in range(24)])
+    df_heatmap_totals.insert(0, 'Weekday', days_labels)
+    df_heatmap_totals.to_csv(os.path.join(output_directory, 'heatmap_totals.csv'), index=False)
+
+    df_heatmap_percentages = pd.DataFrame(heatmap_percentages, columns=[f'{h:02d}:00' for h in range(24)])
+    df_heatmap_percentages.insert(0, 'Weekday', days_labels)
+    df_heatmap_percentages.to_csv(os.path.join(output_directory, 'heatmap_percentages.csv'), index=False)
+
 def aoristic_us(input_csv=None, input_df=None,
                 comm_date_fr='comm_date_fr', comm_date_to='comm_date_to',
                 comm_time_fr='comm_time_fr', comm_time_to='comm_time_to',
@@ -246,3 +255,12 @@ def aoristic_us(input_csv=None, input_df=None,
     plt.close()
 
     print(f"Aoristic analysis completed. Files saved in '{output_directory}'.")
+
+    # save heatmap totals and percentages
+    df_heatmap_totals = pd.DataFrame(heatmap_totals, columns=[f'{h:02d}:00' for h in range(24)])
+    df_heatmap_totals.insert(0, 'Weekday', days_labels)
+    df_heatmap_totals.to_csv(os.path.join(output_directory, 'heatmap_totals.csv'), index=False)
+
+    df_heatmap_percentages = pd.DataFrame(heatmap_percentages, columns=[f'{h:02d}:00' for h in range(24)])
+    df_heatmap_percentages.insert(0, 'Weekday', days_labels)
+    df_heatmap_percentages.to_csv(os.path.join(output_directory, 'heatmap_percentages.csv'), index=False)
